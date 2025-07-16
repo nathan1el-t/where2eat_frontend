@@ -1,0 +1,40 @@
+.groupSelection {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.groupSelect {
+  transition: all 0.2s ease;
+}
+
+.groupSelect input {
+  border: 2px solid var(--mantine-color-gray-3);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  color: var(--mantine-color-text);
+  transition: all 0.2s ease;
+}
+
+.groupSelect input:focus {
+  border-color: #FF8C42;
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
+}
+
+.groupSelect .mantine-Select-dropdown {
+  border: 2px solid var(--mantine-color-gray-3);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.groupSelect .mantine-Select-option {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.groupSelect .mantine-Select-option:hover {
+  background: rgba(255, 140, 66, 0.1);
+}

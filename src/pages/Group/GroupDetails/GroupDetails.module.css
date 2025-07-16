@@ -1,0 +1,147 @@
+.container {
+  padding-top: 1rem;
+  background-color: var(--mantine-color-body);
+  min-height: 100vh;
+  transition: background-color 0.2s ease;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  color: var(--mantine-color-text);
+  transition: color 0.2s ease;
+}
+
+.members {
+  color: gray;
+  transition: color 0.2s ease;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.promote {
+  background-color: #12bd62;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(18, 189, 98, 0.2);
+}
+
+.promote:hover:not(:disabled) {
+  background-color: #0ea558;
+  box-shadow: 0 4px 12px rgba(18, 189, 98, 0.3);
+  transform: translateY(-1px);
+}
+
+
+.promote:disabled {
+  background-color: #a0d8bb; 
+  color: #f0f0f0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.demote {
+  background-color: #fc9f47;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(252, 159, 71, 0.2);
+}
+
+.demote:hover:not(:disabled) {
+  background-color: #fb8c2a;
+  box-shadow: 0 4px 12px rgba(252, 159, 71, 0.3);
+  transform: translateY(-1px);
+}
+
+.demote:disabled {
+  background-color: #fcd5a4;
+  color: #f0f0f0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.remove {
+  background-color: #db1212;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(219, 18, 18, 0.2);
+}
+
+.remove:hover:not(:disabled) {
+  background-color: #c30e0e;
+  box-shadow: 0 4px 12px rgba(219, 18, 18, 0.3);
+  transform: translateY(-1px);
+}
+
+.remove:disabled {
+  background-color: #f5aaaa; 
+  color: #f0f0f0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    gap: 0.5rem;
+  }
+  
+  .promote,
+  .demote,
+  .remove {
+    flex: 1;
+    min-width: 80px;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
+
+.promote:focus,
+.demote:focus,
+.remove:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.promote[data-loading="true"],
+.demote[data-loading="true"],
+.remove[data-loading="true"] {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.promote,
+.demote,
+.remove {
+  font-weight: 500;
+  border-radius: var(--mantine-radius-md);
+}
+
+.actions > * {
+  position: relative;
+  overflow: hidden;
+}
+
+.actions > *:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.promote:disabled,
+.demote:disabled,
+.remove:disabled {
+  opacity: 0.6;
+  filter: grayscale(30%);
+}

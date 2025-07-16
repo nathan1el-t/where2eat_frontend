@@ -1,0 +1,58 @@
+
+.avatarbox {
+  cursor: pointer;
+  border-radius: var(--mantine-radius-md);
+  padding: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.avatarbox:hover {
+  background-color: var(--mantine-color-gray-1);
+}
+
+.avatar {
+  transition: transform 0.2s ease;
+}
+
+.avatarbox:hover .avatar {
+  transform: scale(1.05);
+}
+
+.icon {
+  color: var(--mantine-color-gray-6);
+  transition: color 0.2s ease;
+}
+
+.avatarbox:hover .icon {
+  color: var(--mantine-color-gray-8);
+}
+
+.dropdown {
+  border: 1px solid var(--mantine-color-gray-3);
+}
+
+.gridContainer {
+  margin-bottom: var(--mantine-spacing-sm);
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-md);
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gridItem:hover {
+  background-color: var(--mantine-color-gray-1);
+}
+
+@media (max-width: 768px) {
+  .gridItem {
+    padding: var(--mantine-spacing-xs);
+  }
+}

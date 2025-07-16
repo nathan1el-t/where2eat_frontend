@@ -1,0 +1,114 @@
+.pageTitle {
+  color: var(--mantine-color-text);
+  font-weight: 700;
+}
+
+.headerIcon {
+  color: var(--mantine-color-primary-6);
+}
+
+.legend {
+  background: var(--mantine-color-gray-0);
+  border: 1px solid var(--mantine-color-default-border);
+  border-radius: var(--mantine-radius-sm);
+}
+
+.preferencesContainer {
+  background: var(--mantine-color-body);
+  border: 1px solid var(--mantine-color-default-border);
+  border-radius: var(--mantine-radius-md);
+  padding: var(--mantine-spacing-xl);
+  box-shadow: var(--mantine-shadow-sm);
+}
+
+.cuisineLabel {
+  color: var(--mantine-color-text);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-md);
+}
+
+.preferenceBadge {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.slider {
+  padding: var(--mantine-spacing-xs) 0;
+}
+
+.sliderTrack {
+  background-color: var(--mantine-color-gray-2);
+  height: 6px;
+  border-radius: 3px;
+}
+
+.sliderBar {
+  background-color: var(--mantine-color-primary-6);
+  height: 6px;
+  border-radius: 3px;
+}
+
+.sliderThumb {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--mantine-color-primary-6);
+  background-color: var(--mantine-color-white);
+  box-shadow: var(--mantine-shadow-sm);
+  transition: all 150ms ease;
+}
+
+.sliderThumb:hover {
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.sliderThumb:active {
+  box-shadow: var(--mantine-shadow-lg);
+}
+
+.divider {
+  border-color: var(--mantine-color-default-border);
+  opacity: 0.2;
+}
+
+.saveButton {
+  background: var(--mantine-color-primary-filled);
+  transition: all 200ms ease;
+  font-weight: 600;
+}
+
+.saveButton:hover:not(:disabled) {
+  background: var(--mantine-color-primary-filled-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.saveButton:disabled {
+  background: var(--mantine-color-gray-4);
+  color: var(--mantine-color-gray-6);
+  transform: none;
+  box-shadow: none;
+}
+
+.resetButton {
+  color: var(--mantine-color-gray-7);
+  border: 1px solid var(--mantine-color-gray-4);
+  transition: all 200ms ease;
+  font-weight: 500;
+}
+
+.resetButton:hover:not(:disabled) {
+  background: var(--mantine-color-gray-0);
+  border-color: var(--mantine-color-gray-5);
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .preferencesContainer {
+    padding: var(--mantine-spacing-md);
+  }
+  
+  .cuisineLabel {
+    font-size: var(--mantine-font-size-sm);
+  }
+}

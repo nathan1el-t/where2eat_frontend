@@ -1,0 +1,11 @@
+.rowSelected {
+  background-color: var(--mantine-color-blue-light);
+  transition: background-color 0.2s ease;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  background-color: var(--mantine-color-white);
+  transition: background-color 0.2s ease;
+}

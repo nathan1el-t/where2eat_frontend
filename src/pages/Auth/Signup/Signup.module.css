@@ -1,0 +1,74 @@
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--mantine-color-text);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: color 0.2s ease;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--mantine-color-dimmed);
+  transition: color 0.2s ease;
+}
+
+.link {
+  color: #ff8c42;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #e07b30;
+}
+
+.formWrapper {
+  background-color: var(--mantine-color-body);
+  border-color: var(--mantine-color-default-border);
+  transition: all 0.2s ease;
+}
+
+.label {
+  color: var(--mantine-color-text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.input {
+  background-color: var(--mantine-color-gray-0);
+  border-color: var(--mantine-color-gray-3);
+  color: var(--mantine-color-text);
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: #ff8c42;
+  box-shadow: 0 0 0 2px rgba(255, 140, 66, 0.2);
+}
+
+.checkboxLabel {
+  color: var(--mantine-color-dimmed);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.button {
+  background-color: #ff8c42;
+  color: white;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.button:hover {
+  background-color: #e07b30;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+}

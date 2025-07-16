@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 3rem;
+  background-color: var(--mantine-color-gray-0);
+  border-top: 1px solid var(--mantine-color-gray-2);
+  padding: 2rem 0;
+  transition: all 0.2s ease;
+}
+
+.leftText {
+  color: var(--mantine-color-gray-6);
+  font-size: 0.875rem;
+}
+
+.link {
+  color: var(--mantine-color-gray-6);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--mantine-color-primary-6);
+}
