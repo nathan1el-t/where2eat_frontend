@@ -17,7 +17,7 @@ import { useUserProfile } from "@/hooks/users/useUserProfile";
 import { useUpdatePassword } from "@/hooks/auth/useUpdatePassword";
 import { zodResolver } from "mantine-form-zod-resolver";
 
-import styles from "./tabs.module.css";
+import styles from "./Tabs.module.css";
 import { UpdatePasswordSchema } from "@/shared/schemas/UpdatePasswordSchema";
 
 export const Profiletab = () => {
